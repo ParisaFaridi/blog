@@ -8,7 +8,7 @@ import "./styles/index.css";
 import "./styles/fonts.css";
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_GRAPHQL_URI,
+  uri: import.meta.env.VITE_GRAPHQL_URI,
   cache: new InMemoryCache(),
 });
 
