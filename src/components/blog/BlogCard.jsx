@@ -9,6 +9,7 @@ import {
   Divider,
   Button,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function BlogCard(props) {
   const { author, title, slug, coverPhoto } = props;
@@ -40,15 +41,18 @@ function BlogCard(props) {
       </CardContent>
       <Divider variant="middle" sx={{ margin: "10px" }} />
       <CardActions>
-        <Link to={`/blogs/${slug}`} style={{textDecoration:"none",width:"100%"}}>
-        <Button
-          variant="outlined"
-          size="smaall"
-          sx={{ width: "100%", borderRadius: 3 }}
+        <Link
+          to={`/blogs/${slug}`}
+          style={{ textDecoration: "none", width: "100%" }}
         >
-          مطالعه مقاله
-        </Button>
-        {/* </Link> */}
+          <Button
+            variant="outlined"
+            size="smaall"
+            sx={{ width: "100%", borderRadius: 3 }}
+          >
+            مطالعه مقاله
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

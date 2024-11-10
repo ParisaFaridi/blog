@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import { GET_BLOGS } from "../graphql/queries";
+import { GET_BLOGS } from "../../graphql/queries";
 import { Grid } from "@mui/material";
 import BlogCard from "./BlogCard";
 
