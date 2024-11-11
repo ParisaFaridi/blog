@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { Avatar, Container, Grid, Typography } from "@mui/material";
 import sanitizeHtml from "sanitize-html";
 import BlogCard from "../blog/BlogCard";
+import Loader from "../layout/Loader";
 
 function Author() {
   const { slug } = useParams();
@@ -11,7 +12,7 @@ function Author() {
     variables: { slug },
   });
   if (loading) {
-    return <>loading...</>;
+    return <Loader/>;
   }
   if (error) {
     return <>error...</>;

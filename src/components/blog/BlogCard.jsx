@@ -49,7 +49,7 @@ function BlogCard(props) {
         >
           <Button
             variant="outlined"
-            size="smaall"
+            size="small"
             sx={{ width: "100%", borderRadius: 3 }}
           >
             مطالعه مقاله
