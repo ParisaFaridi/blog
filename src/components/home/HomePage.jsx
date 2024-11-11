@@ -1,7 +1,6 @@
 import { Container, Grid, Typography } from "@mui/material";
-import Authors from "../Authors";
-import Posts from "../Posts";
-
+import Authors from "..//author/Authors";
+import Blogs from "../blog/Blogs"
 function HomePage() {
   return (
     <Container maxWidth="lg">
@@ -17,7 +16,7 @@ function HomePage() {
           <Typography component="h3" variant="h5" mb={3} fontWeight={700}>
             مقالات
           </Typography>
-          <Posts />
+          <Blogs />
         </Grid>
       </Grid>
     </Container>
